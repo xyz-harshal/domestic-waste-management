@@ -1,0 +1,128 @@
+.modi-img {
+    width: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(100.58deg, rgba(12, 12, 12, 0.37) 23.44%, rgba(140, 255, 172, 0.1147) 94.75%);
+}
+.home {
+    margin: 1.2rem;
+    position: relative;
+}
+.home-main {
+    position: absolute;
+    top: 24rem;
+    left: 4rem;
+    width: 40%;
+    padding: .8rem;
+    color: white;
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.home-main-head {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+}
+.home-main-des{
+    font-size: 1rem;
+}
+
+@media (min-width:1050px) and (max-width:1160px) {
+    .home-main {
+        position: absolute;
+        top: 18rem;
+        left: 3.5rem;
+        width: 37%;
+    }
+    .home-main-head{
+        font-size: 1.5rem;
+    }
+    .home-main-des{
+        font-size: .9rem;
+    }
+}
+@media (min-width:950px) and (max-width:1050px) {
+    .home-main {
+        position: absolute;
+        top: 15rem;
+        left: 3rem;
+        width: 37%;
+    }
+    .home-main-head{
+        font-size: 1.3rem;
+    }
+    .home-main-des{
+        font-size: .8rem;
+    }
+}
+@media (min-width:800px) and (max-width:950px) {
+    .home-main {
+        position: absolute;
+        top: 12rem;
+        left: 2.8rem;
+        width: 37%;
+    }
+    .home-main-head{
+        font-size: 1.1rem;
+    }
+    .home-main-des{
+        font-size: .7rem;
+    }
+}
+@media (min-width:650px) and (max-width:800px) {
+    .home-main {
+        position: absolute;
+        top: 10rem;
+        left: 2.6rem;
+        width: 35%;
+    }
+    .home-main-head{
+        font-size: .85rem;
+    }
+    .home-main-des{
+        font-size: .55rem;
+    }
+}
+@media (min-width:500px) and (max-width:650px) {
+    .home-main {
+        position: absolute;
+        top: 7rem;
+        left: 2.4rem;
+        width: 33%;
+    }
+    .home-main-head{
+        font-size: .76rem;
+    }
+    .home-main-des{
+        font-size: .48rem;
+    }
+}
+@media (min-width:350px) and (max-width:500px) {
+    .home-main {
+        position: absolute;
+        top: 5rem;
+        left: 1.6rem;
+        width: 33%;
+    }
+    .home-main-head{
+        font-size: .5rem;
+    }
+    .home-main-des{
+        font-size: .4rem;
+    }
+}
+@media(max-width:350px) {
+    .home-main {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        width: 25%;
+    }
+    .home-main-head{
+        font-size: .3rem;
+    }
+    .home-main-des{
+        font-size: .2rem;
+    }
+}
