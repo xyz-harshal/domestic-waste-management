@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Fotter from "./components/Fotter";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PCampaign from './components/Events/Participate/Campaign';
+import PDrive from './components/Events/Participate/Drive';
+import Education from './components/Eductation';
 function App() {
   return (
     <>
@@ -11,6 +13,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/events/participate/campaign/" element={<PCampaign />} />
+          <Route exact path="/events/participate/drive" element={<PDrive />} />
+          <Route exact path="/education" element={<Education />} />
         </Routes>
         <Fotter />
       </BrowserRouter>

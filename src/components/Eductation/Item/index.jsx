@@ -10,7 +10,7 @@ let LearnItem = (props) => {
             <div class="item-content">
                 <h2> {props.question} </h2>
                 <p> {props.brief} </p>
-                <a href={props.link} class="view-more-link">View more</a>
+                <a href={props.link} class="view-more-link" target="_blank">View more</a>
             </div>
         </div>
     </section>
