@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* overflow:hidden; */
+}
+
+.OrganizeDrive{
+    font-family: 'Open Sans', sans-serif;
+    background-color:#f3f3f3;
+    width:65%;
+    /* height:100vh; */
+    padding:2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius:10px;
+    max-width: 730px;
+    margin: 0 auto;
+}
+.form-title{
+    color: #17b169; 
+    font-weight:bolder;
+    font-size: 1.6rem;
+    margin-bottom:0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start with opacity set to 0 (fully transparent) */
+    animation: fadeIn 1s ease-in-out 0.4s forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Animate from fully transparent */
+    }
+    to {
+      opacity: 1; /* Animate to fully visible */
+    }
+  }
+.form-description {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom:0.8rem;
+  }
+  .separator {
+    border-top: 1px solid #ccc; /* Add a thin border line */
+    margin-top: 0.6rem; /* Space it from the paragraph */
+  }
+  .form-group{
+    margin:0.5rem 0;
+    width:100%;
+  }
+  .form-input{
+    border:1px solid #17b169; 
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+label {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-subtitle {
+    opacity:0.8;
+    color: #17b169; 
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap:0.2rem;
+  }
+  .address_details{
+    display: flex;
+    justify-content: space-between;
+    gap:0.2rem;
+  }
+ 
+.form-button {
+    background-color: #17b169; /* Green background color */
+    color: #fff; 
+    padding: 10px 20px;
+    border: 2px solid #17b169; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Add transitions for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3; /* Blue background color on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger box shadow on hover */
+  }
+  
+  
+ 
+  /* Optional: Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .OrganizeDrive {
+      max-width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  
