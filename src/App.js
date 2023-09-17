@@ -16,7 +16,7 @@ import Education from './components/Eductation';
 
 function App() {
   return (
-    <>
+    <>      
       <BrowserRouter>
         <Navbar />
         <Routes>
