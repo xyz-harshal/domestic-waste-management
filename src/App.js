@@ -3,9 +3,11 @@ import Navbar from './components/Navbar';
 import Fotter from "./components/Fotter";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PCampaign from './components/Events/Participate/Campaign';
+
+
 function App() {
   return (
-    <>
+    <>      
       <BrowserRouter>
         <Navbar />
         <Routes>
