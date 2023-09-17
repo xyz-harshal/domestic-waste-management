@@ -1,13 +1,13 @@
 import React from 'react';
-// import { OrganizeDrive } from './Organize/Drive/OrganizeDrive';
-// import {ParticipateDrive} from './Participate/Drive/ParticipateDrive';
-// import {OrganizeCampaign} from './Organize/Campaign/OrganizeCampaign';
-// import {ParticipateCampaign} from './Participate/Campaign/ParticipateCampaign';
+
 import { Link } from 'react-router-dom';
 
 import "./Events.css";
-import orgimage from "../../img/drive.jpg"
-import partimage from "../../img/rallies.webp"
+import orgimage from "../../img/organize_drive.jpg"
+import partimage from "../../img/participate_drive.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBullhorn, faFlag, faDumpster} from '@fortawesome/free-solid-svg-icons';
+
  const Events = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ import partimage from "../../img/rallies.webp"
 
                 <h1>Domestic Waste Management</h1>
 
-                <p>Welcome to our waste management program.How would you like to participate?</p>
+                <p>Welcome to our waste management program.How would you like to contribute?</p>
             </header>
 
                 <div className='options'>
@@ -24,7 +24,7 @@ import partimage from "../../img/rallies.webp"
                     <div className="organize-section">
 
                         <div className='org_heading'>
-                            To Organize
+                            <FontAwesomeIcon icon={faFlag}/>To Organize
                         </div>
                         <div className='org-image'>
                             <img  src={orgimage} alt='organize_image' width={400} height={400}/>
@@ -34,7 +34,7 @@ import partimage from "../../img/rallies.webp"
                         <div className='option'>
                            <Link to="/events/organize/drive">
                             <button> 
-                                Drive
+                            <FontAwesomeIcon icon={faBullhorn} /> Drive
                             </button>
                            </Link>
                         </div>
@@ -43,7 +43,7 @@ import partimage from "../../img/rallies.webp"
                         <div className="option">
                             <Link to="/events/organize/campaign">
                                 <button>
-                                Campaign
+                                <FontAwesomeIcon icon={faDumpster } /> Campaign
                                 </button>
                             </Link>
                             
@@ -53,6 +53,7 @@ import partimage from "../../img/rallies.webp"
 
                     <div className="participate-section">
                         <div className='participate_heading'>
+                            <FontAwesomeIcon icon={faFlag}/>
                             To Participate
                         </div>
                         <div className='part-image'>
@@ -63,6 +64,7 @@ import partimage from "../../img/rallies.webp"
                         <div className='option'>
                             <Link>
                                 <button to="/events/participate/drive">
+                                    <FontAwesomeIcon icon={faBullhorn}/>
                                     Drive
                                 </button>
                             </Link>
@@ -72,6 +74,7 @@ import partimage from "../../img/rallies.webp"
                         <div className="option">
                            <Link>
                             <button to="/events/participate/campaign">
+                                    <FontAwesomeIcon icon={faDumpster}/>
                                     Campaign
                                 </button>
                            </Link>
