@@ -10,7 +10,7 @@ let ContentItems = (props) => {
                 <p className="content-para">{props.tail}</p>
                 <p className="content-para">{props.tail1}</p>
                 <p className="content-para">{props.tail2}</p>
-                <a><BsBoxArrowRight color="#2FAF57" size={"1.5rem"}/></a>
+                <a><BsBoxArrowRight color="#2FAF57" size={"1.65rem"} className="mt-2"/></a>
             </div>
 
         </div>

@@ -1,0 +1,44 @@
+.clist {
+    border-radius: .5rem;
+    border: 1px solid #E8E8E8;
+    transition: .3s ease;
+}
+
+.clist:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transform: scale(1.01);
+}
+
+.clist-img {
+    min-width: 300px;
+    border-radius: .5rem;
+    transition: .3s ease;
+    background: linear-gradient(180deg, #96EDA9 0%, rgba(216, 216, 216, 0.70) 100%);
+}
+.clist-img:hover{
+    transform: scale(.99);
+}
+.clist-img {
+    font-size: 1.3rem;
+}
+
+.clist-details {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clist-item-head {
+    font-size: 1.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.register-button {
+    background-color: #96EDA9;
+    border-radius: 1.2rem;
+    display: inline;
+}
+.clist-more-detail p{
+    display: inline;
+}
+.clist-short-detail{
+    min-width: 200px;
+}

@@ -1,0 +1,66 @@
+.item-container {
+    background-color: #fff; /* Background color for the item container */
+    border: 1px solid #e0e0e0; /* Border for a subtle separation */
+    border-radius: 20px; /* Add a border radius for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow for elevation */
+    overflow: hidden;
+    margin: 10px; /* Spacing between items */
+    display: flex;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.item-container:hover {
+    transform: translateY(-5px); /* Hover effect to elevate the item */
+}
+
+/* Item Image Styles */
+.item-image {
+    flex: 40%; /* Adjust the image size based on your preference */
+    max-width: 300px; /* Max width for the image */
+    max-height: 300px; /* Max height for the image */
+    overflow: hidden; /* Hide overflowing images */
+    border-radius: 8px 0 0 8px; /* Rounded corners for the left side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-image img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    max-height: 100%; /* Ensure the image fits within its container */
+    width: auto; /* Preserve image aspect ratio */
+    height: auto; /* Preserve image aspect ratio */
+}
+
+
+/* Item Content Styles */
+.item-content {
+    flex: 60%; /* Adjust content size based on your preference */
+    padding: 20px; /* Padding for spacing within the content */
+}
+
+.item-content h2 {
+    font-size: 24px; /* Header font size */
+    color: #333; /* Header text color */
+    margin-bottom: 10px; /* Spacing below the header */
+}
+
+.item-content p {
+    font-size: 16px; /* Content font size */
+    color: #666; /* Content text color */
+    margin-bottom: 15px; /* Spacing below each paragraph */
+    line-height: 1.5; /* Line spacing for readability */
+}
+
+/* "View More" Link Styles */
+.view-more-link {
+    text-decoration: none;
+    color: #4CAF50; /* Link color */
+    font-weight: bold; /* Bold font for the link */
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+.view-more-link:hover {
+    color: #45A049; /* Hover color for the link */
+}
