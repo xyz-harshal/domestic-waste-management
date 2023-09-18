@@ -104,7 +104,7 @@ export const OrganizeCampaign = () => {
               maxLength={30}
               value={formData.agenda}
               onChange={handleInputChange}
-              placeholder='Enter your drive agenda...'
+              placeholder='Enter your drive"s agenda...'
               required
             ></input>
           </div>
