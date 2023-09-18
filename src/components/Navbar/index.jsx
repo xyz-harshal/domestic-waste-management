@@ -3,8 +3,19 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import {useLogout} from "../../hooks/useLogout"
+import { useAuthContext } from "../../hooks/useAuthContext";
+
+
 let Navbar = () => {
     let [toggle, setToggle] = useState(false);
+
+    const {user} = useAuthContext();
+    const {logout} = useLogout();
+    function handleLogout(){
+        logout();
+    }
     return (
         <section id="Navbar">
             <div id="container">
@@ -20,8 +31,17 @@ let Navbar = () => {
                     </div>
                     
                     <div className="credentials flex flex-row items-center gap-2 justify-end">
-                        <p>Login/Register</p>
                         <BsFillPersonFill size={"1.5rem"} />
+                        {user && (<div>                            
+                            <span>{user.username}</span>
+                            <button onClick={handleLogout} className="logoutBtn">Log Out</button>
+                        </div>)}
+                        {!user && (
+                            <div>
+                            <Link to="/login" className="loginLink">Login</Link>
+                            <Link to="/register" className="registerLink">Register</Link>                            
+                            </div>)}                            
+                        
                     </div>
                 </div>
                 <div className="flex flex-row items-center toggle-buttons">

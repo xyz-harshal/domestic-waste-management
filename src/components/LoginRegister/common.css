@@ -1,0 +1,173 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --cardBorder: #ffffff30;
+    --cardBackground: #228B22;
+    --btnBg: #ffffff00;
+    --btnFocus: #ffffffb9;
+    --error: #f73232e1;
+
+    --facebook: #1771e6;
+    --twitter: #1c99e6;
+    --instagram: #cb2770;
+    --whatsapp: #2fe664;
+    --telegram: #0081c2;
+    --github: rgb(88, 101, 242);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--cardBorder);
+    border-radius: 0.3rem;
+    background-color: transparent;
+    /* Transparent background */
+    color: var(--black);
+    /* Text color */
+    transition: border-color 0.4s ease;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cardBackground);    
+}
+
+.wrapper .card {
+    height: 29rem;
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    color: black;
+    border: 0.2rem solid var(--cardBorder);
+    border-radius: 1.5rem;
+    padding: 0rem 2rem;
+    backdrop-filter: blur(1.7rem);
+    position: relative;
+    z-index: 10;    
+}
+
+.form_title {
+    color: white;
+    margin: 0 auto;
+    font-size: 2rem;    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form_title_div {
+    margin: 0 auto;
+}
+
+.email_div {
+    margin-top: 0.2rem;
+}
+
+.signupbtn {
+    width: 10rem;
+    margin: 0.6rem auto;
+    font-weight: bolder;
+    color: var(--btnFocus);
+    background: var(--btnBg);
+    text-transform: capitalize;
+    border: 0.2rem solid var(--btnFocus);
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signupbtn:hover {
+    background: var(--btnFocus);
+    color: #131313;
+}
+
+.loginbtn{
+    width: 10rem;
+    margin:0.7rem auto;
+    font-weight:bolder;
+    color: var(--btnFocus);
+    background: var(--btnBg);
+    text-transform: capitalize;
+    border: 0.2rem solid var(--btnFocus);
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+  }
+  .loginbtn:hover {
+    background: var(--btnFocus);
+    color: #131313;
+  }
+
+  div.error {
+    padding: 10px;    
+    font-weight: 500;    
+    background-color: rgba(255, 255, 255, 0.226);
+    border: 2px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+
+.circle-top {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 13%;
+    left: 30%;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
+    animation: circleTop 9s ease infinite;
+}
+
+.circle-bottom {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1%;
+    right: 30%;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
+    animation: circleBottom 6s ease infinite;
+}
+
+@keyframes circleTop {
+    50% {
+        left: 33%;
+        top: 8%;
+        scale: 1.05;
+    }
+}
+
+@keyframes circleBottom {
+    50% {
+        bottom: 4%;
+        right: 25%;
+    }
+}

@@ -15,13 +15,13 @@ async function login(req, res) {
             throw Error('All fields must be filled')
         }
 
-        const user = userModel.findOne({username: username})
-        .then(user => {
+        const user = await userModel.findOne({username: username})
+        .then(async (user) => {
             if(!user){
                 throw Error("Username does not exist")
             }
 
-            brcypt.compare(password, user.password)
+            await brcypt.compare(password, user.password)
             .then(result => {
                 if(result){
                     const token = createToken(user._id);
@@ -45,7 +45,7 @@ async function register(req, res) {
             throw Error('All fields must be filled')
         }        
     
-        const exist = userModel.findOne({ username: username })
+        const exist = await userModel.findOne({ username: username })
             .then((user) => {
                 if (user) {
                     throw Error("Username already in use")
@@ -53,7 +53,7 @@ async function register(req, res) {
             })
         //Hashing
         const salt = await brcypt.genSalt(10);
-        brcypt.hash(password, salt)
+        await brcypt.hash(password, salt)
             .then(async (hash) => {
                 const user = new userModel({
                     username: username,

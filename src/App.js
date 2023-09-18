@@ -1,7 +1,7 @@
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar';
 import Fotter from "./components/Fotter";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 import Events from "./components/Events/Events"
 import { OrganizeCampaign } from './components/Events/Organize/Campaign/OrganizeCampaign';
@@ -14,15 +14,21 @@ import PCampaign from './components/Events/Participate/Campaign';
 import PDrive from './components/Events/Participate/Drive';
 import Education from './components/Eductation';
 
+import Login from './components/LoginRegister/Login';
+import Register from './components/LoginRegister/Register';
+
+import { useAuthContext } from './hooks/useAuthContext';
+
 function App() {
+  const {user} = useAuthContext()  
   return (
     <>      
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
+        <Routes>          
+          <Route exact path="/" element={!user ? <Login /> : <Home />} />
 
-          <Route path="/events" element={<Events/>}/>
+          <Route path="/events" element={!user ? <Login /> : <Events/>}/>
           <Route path="/events/organize/campaign" element={<OrganizeCampaign/>}/>
           <Route path="/events/organize/drive" element={<OrganizeDrive/>}/>
           <Route path="/events/participate/campaign" element={<ParticipateCampaign/>}/>
@@ -30,8 +36,10 @@ function App() {
 
           <Route exact path="/events/participate/campaign/" element={<PCampaign />} />
           <Route exact path="/events/participate/drive" element={<PDrive />} />
-          <Route exact path="/education" element={<Education />} />
+          <Route exact path="/education" element={user ? <Education /> : <Login />} />          
 
+          <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />          
+          <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
         </Routes>
         {/* <Fotter /> */}
       </BrowserRouter>
