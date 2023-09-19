@@ -2,7 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const campaignRoutes = require('./routes/campaign')
 const loginRoutes = require('./routes/loginRoute');
+const { log } = require('console')
 
 //Express App
 const app = express();
@@ -17,6 +19,7 @@ app.use((req, res, next) => {
 
 //Routes
 app.use('/' ,loginRoutes);
+app.use('/api/campaign', campaignRoutes)
 
 
 //Database connection

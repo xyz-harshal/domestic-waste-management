@@ -11,7 +11,7 @@ let EList = (props) => {
             </div>
             <div className="clist-details flex flex-row gap-10">
                 <div className="flex flex-col clist-short-detail">
-                    <p className="clist-item-head">{props.data.name}</p>
+                    <p className="clist-item-head">{props.data.organizationName}</p>
                     <p>{props.data.agenda}</p>
                     <p>When: {props.data.date}</p>
                     <p>Where: {props.data.area}, {props.data.city}</p>
@@ -19,7 +19,7 @@ let EList = (props) => {
                     
                 </div>
                 <div className="flex flex-col clist-more-detail">
-                    <p>{props.data.brief}</p>
+                    <p>{props.data.briefing}</p>
                     <p style={{color:"red"}}><BiTimeFive style={{display:"inline",paddingRight:".4rem"}} size={"1.5rem"}/>Hurry up! only few seats left</p>
                     <button className="register-button p-2">Register Now</button>
                 </div>

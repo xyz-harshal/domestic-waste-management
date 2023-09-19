@@ -26,9 +26,39 @@ export const OrganizeCampaign = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
+
+    const response = await fetch('/api/campaign', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    const json = await response.json()
+    if(!response.ok) {
+      setError(json.error)
+      console.log(error)
+    } 
+    if(response.ok) {
+      setError(null)
+      console.log('new workout added', json)
+      setFormData({
+        organizationName: '',
+        date: '',
+        time: '',
+        maxPeopleLimit: '',
+        agenda: '',
+        organizerEmail: '',
+        phoneNumber: '',
+        area: '',
+        district: '',
+        city: '',
+        briefing: ''
+      });
+    }
+
     console.log('Form submitted with data:', formData);
   };
 
