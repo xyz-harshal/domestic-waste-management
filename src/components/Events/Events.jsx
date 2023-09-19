@@ -62,8 +62,8 @@ import { faBullhorn, faFlag, faDumpster} from '@fortawesome/free-solid-svg-icons
 
                             {/* option 3 */}
                         <div className='option'>
-                            <Link>
-                                <button to="/events/participate/drive">
+                            <Link to="/events/participate/drive">
+                                <button >
                                     <FontAwesomeIcon icon={faBullhorn}/>
                                     Drive
                                 </button>
@@ -72,8 +72,8 @@ import { faBullhorn, faFlag, faDumpster} from '@fortawesome/free-solid-svg-icons
 
                         {/* option 4 */}
                         <div className="option">
-                           <Link>
-                            <button to="/events/participate/campaign">
+                           <Link to="/events/participate/campaign">
+                            <button >
                                     <FontAwesomeIcon icon={faDumpster}/>
                                     Campaign
                                 </button>
