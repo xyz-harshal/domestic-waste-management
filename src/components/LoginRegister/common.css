@@ -1,20 +1,18 @@
-:root {
-    --white: #fff;
-    --black: #000;
-    --cardBorder: #ffffff30;
-    --cardBackground: #228B22;
-    --btnBg: #ffffff00;
-    --btnFocus: #ffffffb9;
-    --error: #f73232e1;
-
-    --facebook: #1771e6;
-    --twitter: #1c99e6;
-    --instagram: #cb2770;
-    --whatsapp: #2fe664;
-    --telegram: #0081c2;
-    --github: rgb(88, 101, 242);
-}
-
+:root{
+    --white : #fff;
+    --black : #000;
+    --cardBorder : #ffffff30;
+    --cardBackground : #40C272;
+    --btnBg : #ffffff00;
+    --btnFocus : #ffffffb9;
+  
+    --facebook : #1771e6;
+    --twitter : #1c99e6;
+    --instagram : #cb2770;
+    --whatsapp : #2fe664;
+    --telegram : #0081c2;
+    --github : rgb(88, 101, 242);
+  }
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +80,13 @@ input {
 .email_div {
     margin-top: 0.2rem;
 }
-
+.desc_div{
+    margin-top: -1rem;
+  }
+  .desc{
+    font-size: 1.2rem;
+    color: var(--black);
+  }
 .signupbtn {
     width: 10rem;
     margin: 0.6rem auto;
@@ -131,32 +135,31 @@ input {
     margin: 20px 0;
   }
 
-.circle-top {
-    width: 14rem;
-    height: 14rem;
+  .circle-top{
+    width: 12rem;
+    height:  12rem;
     border-radius: 50%;
     position: fixed;
     top: 13%;
     left: 30%;
-    z-index: 1;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    z-index: 1;  
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+    /* background: linear-gradient(135deg, #009E60, #FFFFFF); */
     box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
-    animation: circleTop 9s ease infinite;
-}
-
-.circle-bottom {
-    width: 14rem;
-    height: 14rem;
+    animation: circleTop 9s ease infinite ;
+  }
+   .circle-bottom{
+    width:  12rem;
+    height:  12rem;
     border-radius: 50%;
     position: fixed;
     bottom: 1%;
     right: 30%;
     z-index: 1;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
     box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
     animation: circleBottom 6s ease infinite;
-}
-
+  }
 @keyframes circleTop {
     50% {
         left: 33%;
@@ -171,3 +174,29 @@ input {
         right: 25%;
     }
 }
+@media (max-width: 600px) {
+    /* Adjust styling for small screens here */
+    body {
+      font-size: 16px; /* Example: Increase font size for readability */
+    }
+    .card {
+      width: 90%; /* Make the card width smaller */
+    }
+  }
+  
+  /* Medium screens (e.g., tablets) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styling for medium screens here */
+    .card {
+      width: 70%; /* Make the card width a bit larger */
+    }
+  }
+  
+  /* Large screens (e.g., desktops) */
+  @media (min-width: 1025px) {
+    /* Adjust styling for large screens here */
+    .card {
+      width: 50%; /* Make the card width even larger */
+    }
+  }
+  

@@ -27,7 +27,6 @@ function App() {
           <Route path="/events" element={!user ? <Login /> : <Events/>}/>
           <Route path="/events/organize/campaign" element={<OrganizeCampaign/>}/>
           <Route path="/events/organize/drive" element={<OrganizeDrive/>}/>
-
           <Route exact path="/events/participate/campaign/" element={<PCampaign />} />
           <Route exact path="/events/participate/drive" element={<PDrive />} />
 

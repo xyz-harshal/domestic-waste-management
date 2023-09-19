@@ -23,6 +23,11 @@ const Register = () => {
                     <h1 className='form_title'>Register</h1>
                 </div>
 
+                <div className='desc_div'>
+                    <p className='desc'>
+                    CleanGreen: Revolutionizing Domestic Waste Management
+                    </p>
+                </div>
 
                 <div className="email_div">
                     <label>Username: </label>
