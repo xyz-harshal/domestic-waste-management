@@ -21,6 +21,12 @@ const Login = () => {
                     <h1 className='form_title'>Login</h1>
                 </div>
 
+                <div className='desc_div'>
+                    <p className='desc'>
+                        Welcome back to the Waste Management Dashboard
+                    </p>
+                </div>
+
                 <div className="email_div">
                     <label>Username: </label>
                     <input
