@@ -2,8 +2,6 @@
   --white : #fff;
   --black : #000;
   --cardBorder : #ffffff30;
-  /* --cardBackground : #3C93DA; */
-  /* --cardBackground :#55DE8A; */
   --cardBackground : #40C272;
   --btnBg : #ffffff00;
   --btnFocus : #ffffffb9;
@@ -36,13 +34,7 @@ label {
   font-size: 1.2em;
   font-weight: bold;
   color: var(--black); /* You can adjust the color */
-/*}
-span {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--black); /* Icon color */
 }
-
 input {
   width: 100%;
   padding: 0.5rem;
@@ -71,7 +63,7 @@ input {
 }
 .form_title{
   color:white;
-  marin:0 auto;
+  margin:0 auto;
   font-size: 1.9rem;
 }
 .form_title_div{

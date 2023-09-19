@@ -2,7 +2,6 @@
   "name": "main",
   "version": "0.1.0",
   "private": true,
-  "type":"module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -25,6 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:4000",
   "eslintConfig": {
     "extends": [
       "react-app",
