@@ -3,7 +3,7 @@ import { useState } from 'react';
 import {AiOutlineEye, AiOutlineEyeInvisible} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import "./LoginForm.css"
+
 
 export const LoginForm = ({setIsLoggedIn, title}) => {
 
@@ -53,7 +53,7 @@ export const LoginForm = ({setIsLoggedIn, title}) => {
                         Email Address<sup>*</sup>
                     </p>
 
-                    <input type="email" 
+                    <input type="email"
                     required
                     value={formData.email}
                     onChange={changeHandler}
@@ -71,7 +71,7 @@ export const LoginForm = ({setIsLoggedIn, title}) => {
                     Password<sup>*</sup>
                 </p>
                 <div className="input_container">
-                    <input
+                    <input 
                     required
                     type= {showPassword ? ("text") : ("password")}
                     value = {formData.password}

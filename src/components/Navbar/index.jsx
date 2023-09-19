@@ -17,6 +17,7 @@ let Navbar = () => {
                         <a href="/events" ><p>Events</p></a>
                         <a href="/education" ><p>Education</p></a>
                         <a href="/trash" ><p>Trash Tracker</p></a>
+                        <a href="/rewards"> <p>Rewards</p></a>
                     </div>
                     
                     <div className="credentials flex flex-row items-center gap-2 justify-end">
@@ -35,8 +36,8 @@ let Navbar = () => {
                     <a className="flex flex-row"><p>Login/Register</p><BsFillPersonFill size={"1.5rem"} /></a>
                     <a href="/events" ><p>Events</p></a>
                     <a href="/education" ><p>Education</p></a>
-                    <a href="/rewards"> <p>Rewards</p></a>
                     <a href="/trash" ><p>Trash Tracker</p></a>
+                    
                 </div>
             </div>
 

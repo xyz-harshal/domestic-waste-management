@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { toast } from 'react-hot-toast';
 import {AiOutlineEye, AiOutlineEyeInvisible} from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import "./SignupForm.css"
 
 export const SignupForm = ({setIsLoggedIn, title}) => {
 
@@ -64,7 +63,7 @@ export const SignupForm = ({setIsLoggedIn, title}) => {
             <label className=''>
                 <p>Email Address<sup>*</sup></p>
 
-                <input
+                <input 
                 required
                 type="email"
                 name="email"
@@ -83,7 +82,7 @@ export const SignupForm = ({setIsLoggedIn, title}) => {
                     <p>Create Password<sup>*</sup></p>
 
                     <div className='input_container'>
-                        <input
+                        <input 
                         required
                         type= {showPassword ? ("text") : ("password")}
                         name="password"
@@ -103,7 +102,7 @@ export const SignupForm = ({setIsLoggedIn, title}) => {
                     <p>Confirm Password<sup>*</sup></p>
 
                     <div className='input_container'>
-                        <input
+                        <input 
                         required
                         type= {showConfirmPassword ? ("text") : ("password")}
                         name="confirmPassword"

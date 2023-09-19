@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow-y: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.rewards_container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    gap: 1.5rem;
+    padding:2rem;
+    height:100%;
+    
+}
+.reward_image:hover {
+    transform: scale(1.05); 
+  }
+.reward_image{
+    object-fit:cover;
+    height:15rem;
+    max-width:100%;
+    margin:0.9rem 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.reward_card{
+    border: 2px solid #e5e5e5;
+    padding:1.2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-radius:8px;
+    gap:2.5rem;
+    width:80vw;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.reward_details{
+  margin-left:1.7rem;
+    width:70%;
+    max-width:75%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reward_title {
+    margin-top:0.7rem;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bolder;
+    margin-bottom: 0.5rem; /* Added margin at the bottom */
+  }
+  
+  /* Reward Description */
+  .reward_description {
+    margin-top:1rem;
+
+    font-size: 1rem; /* Adjust font size */
+    color: #555; /* Darker text color for description */
+    line-height: 1.5; /* Improved line height for readability */
+  }
+  .reward_card:hover {
+    transform: translateY(-5px); /* Add a slight hover effect */
+    transition: transform 0.2s ease;
+  }
+
+  
+  .claim_button{
+    font-weight:bold;
+    background-color: #009E60; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+    margin-top: 5rem;
+    margin-left:20rem;
+  }
+  .claim_button:hover {
+    background-color: #00B574; /* Change the background color on hover */
+  }
+
+  .img_diamond_cont{
+    width:40%;
+    flex-direction:column;
+    display:flex;
+
+/*     
+     justify-content:space-between; */
+  }
+  .diamond_img{
+    width:3.1rem;
+    
+  height:3.5rem;
+  }
+  .img_diamond_cont .diamond_point_cont{
+    margin-top:-1%;
+    width: auto;
+    height: auto;
+    margin-left:30%;
+   
+  }
+  .diamond_point_cont {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    gap:0.3rem;
+
+  }
+  
+  .points{
+    font-size:1.67rem;
+    overflow-x:hidden;
+    width:auto;
+  }
+  .user_points{
+    font-size:1.2rem;
+    overflow-x:hidden;
+    width:auto;
+  }
+  .heading_container{
+    display:flex;
+    align-items:center;
+    gap:45rem;
+  
+  }
+
+   .heading_reward{
+    font-size: 1.2rem; /* Adjust the font size */
+    color: #009E75; /* Set the text color */
+    margin-bottom: 0.5rem; /* Add some space below the heading */
+    font-weight: bold; /* Make the text bold */
+  }
