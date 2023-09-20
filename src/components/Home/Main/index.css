@@ -1,15 +1,15 @@
 .modi-img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .6rem;
     background: linear-gradient(100.58deg, rgba(12, 12, 12, 0.37) 23.44%, rgba(140, 255, 172, 0.1147) 94.75%);
 }
 .home {
-    margin: 1.2rem;
+    margin: 1rem;
     position: relative;
 }
 .home-main {
     position: absolute;
-    top: 24rem;
+    top: 20rem;
     left: 4rem;
     width: 40%;
     padding: .8rem;

@@ -1,10 +1,10 @@
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     overflow-y: auto;
     font-family: 'Josefin Sans', sans-serif;
-}
+} */
 .rewards_container {
     display:flex;
     flex-wrap:wrap;

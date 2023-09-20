@@ -1,7 +1,5 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
 import "./Events.css";
 import orgimage from "../../img/organize_drive.jpg"
 import partimage from "../../img/participate_drive.jpg"

@@ -20,10 +20,10 @@ let Navbar = () => {
     return (
         <section id="Navbar">
             <div id="container">
-            <div className="home-main-container">
+            <div className="home-main-container py-2">
             <div className="navbar flex flex-row justify-between">
                     <div className="nav-logo">
-                        <p>Government<br />of Kerala 🌿</p>
+                        <a href="/"><img src={require("../../img/master-logo.png")} className="nav-logo" /></a>
                     </div>
                     <div className="navbar-items-collection flex flex-row gap-12 items-center justify-between">
                         <a href="/events" ><p>Events</p></a>
@@ -43,7 +43,6 @@ let Navbar = () => {
                             <Link to="/login" className="loginLink">Login</Link>
                             <Link to="/register" className="registerLink">Register</Link>                            
                             </div>)}                            
-                        
                     </div>
                 </div>
                 <div className="flex flex-row items-center toggle-buttons">
@@ -51,14 +50,12 @@ let Navbar = () => {
                         <MdOutlineCancel size={"1.7rem"} onClick={() => setToggle(!toggle)} className={toggle ? "" : "invincible"} />
                 </div>
             </div>
-                
                 <div className={toggle ? "navbar-toggle-collection flex flex-col justify-start gap-1" : "invincible"}>
                     <hr />
                     <a className="flex flex-row"><p>Login/Register</p><BsFillPersonFill size={"1.5rem"} /></a>
                     <a href="/events" ><p>Events</p></a>
                     <a href="/education" ><p>Education</p></a>
                     <a href="/trash" ><p>Trash Tracker</p></a>
-                    
                 </div>
             </div>
 

@@ -35,7 +35,6 @@ import "./index.css"
                                   <div className='points'>{reward.pointsToEarn}</div>
                                 </div>
                                 
-
                             </div>
                             
 

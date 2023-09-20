@@ -10,10 +10,13 @@
 }
 
 .clist-img {
-    min-width: 300px;
+    min-width: 250px;
     border-radius: .5rem;
     transition: .3s ease;
-    background: linear-gradient(180deg, #96EDA9 0%, rgba(216, 216, 216, 0.70) 100%);
+    /* background: linear-gradient(180deg, #96EDA9 0%, rgba(216, 216, 216, 0.70) 100%); */
+    background-color: #D8FFE3;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 .clist-img:hover{
     transform: scale(.99);
@@ -35,10 +38,23 @@
     background-color: #96EDA9;
     border-radius: 1.2rem;
     display: inline;
+    outline: 1px solid #96EDA9;
+    transition: .3s ease;
+}
+.register-button:hover{
+   background-color: transparent;
+   color: black;
+
 }
 .clist-more-detail p{
     display: inline;
 }
 .clist-short-detail{
-    min-width: 200px;
+    min-width: 250px;
+    outline: 1px solid #E8E8E8;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+.clist-short-detail:hover{
+    transform: scale(1.01);
 }
