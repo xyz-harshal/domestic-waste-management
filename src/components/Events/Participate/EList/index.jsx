@@ -11,9 +11,9 @@ let EList = (props) => {
                 <p>{props.data.date}</p>
                 <p>{props.data.district}</p>
             </div>
-            <div className="clist-details flex flex-row gap-8">
-                <div className="flex flex-col clist-short-detail p-3">
-                    <p className="clist-item-head">{props.data.name}</p>
+            <div className="clist-details flex flex-row gap-10">
+                <div className="flex flex-col clist-short-detail">
+                    <p className="clist-item-head">{props.data.organizationName}</p>
                     <p>{props.data.agenda}</p>
                     <p>When: {props.data.date}</p>
                     <p>Where: {props.data.area}, {props.data.city}</p>
@@ -21,9 +21,9 @@ let EList = (props) => {
                     
                 </div>
                 <div className="flex flex-col clist-more-detail">
-                    <p>{props.data.brief}</p>
-                    <p style={{color:"red"}}><BiTimeFive style={{display:"inline",paddingRight:".4rem"}} size={"1.5rem"}/>Hurry up! registeration closes soon.</p>
-                    <button className="register-button p-2" onClick={()=>{setToggle(!toggle)}}>{toggle?"Registeration done!!":"Register Now"}</button>
+                    <p>{props.data.briefing}</p>
+                    <p style={{color:"red"}}><BiTimeFive style={{display:"inline",paddingRight:".4rem"}} size={"1.5rem"}/>Hurry up! only few seats left</p>
+                    <button className="register-button p-2">Register Now</button>
                 </div>
             </div>
         </div>
