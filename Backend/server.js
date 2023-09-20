@@ -3,12 +3,30 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const loginRoutes = require('./routes/loginRoute');
+const mapRoutes = require('./routes/mapRoute');
+const multer = require('multer');
+const {postDetails, getDetails} = require('./controllers/mapController');
+// const MapModel = require('./models/mapModel');
+// const fs = require('fs');
 
 //Express App
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Middleware
+
+//Configuring Multer
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, 'uploads/')
+    },
+    filename: function (req, file, cb) {
+      const uniqueSuffix = Date.now();
+      cb(null, uniqueSuffix + file.originalname)
+    }
+  })
+  
+const upload = multer({ storage: storage })
 app.use(express.json());
 app.use((req, res, next) => {
     console.log(req.path, req.method);
@@ -17,7 +35,9 @@ app.use((req, res, next) => {
 
 //Routes
 app.use('/' ,loginRoutes);
-
+// app.use('/api/trash', mapRoutes);
+app.get('/api/trash', getDetails);
+app.post('/api/trash', upload.single("image"), postDetails)
 
 //Database connection
 try {

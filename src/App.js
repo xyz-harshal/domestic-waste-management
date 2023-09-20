@@ -18,6 +18,7 @@ import Education from './components/Eductation/index';
 
 import Login from './components/LoginRegister/Login';
 import Register from './components/LoginRegister/Register';
+import TrashDetailsForm from './components/TrashMap/TrashDetailsForm';
 
 import { useAuthContext } from './hooks/useAuthContext';
 
@@ -41,6 +42,8 @@ function App() {
           <Route exact path='/rewards' element={user ? <Rewards/> : <Login />}/>
 
           <Route exact path="/education" element={user ? <Education /> : <Login />} />          
+
+          <Route path='/trash' element={user ? <TrashDetailsForm /> : <Login />} />
 
           <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />} />          
           <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />

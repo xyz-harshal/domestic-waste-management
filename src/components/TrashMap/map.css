@@ -1,0 +1,128 @@
+/* @import '~leaflet/dist/leaflet.css'; */
+.map {
+  height: 500px;
+  width: 70vw;
+  margin: 2rem auto;
+  border: 1px solid gray;
+  background-color: rgb(125, 193, 220);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.map-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leaflet-container {
+  width: 70vw;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.leaflet-popup-content-wrapper {
+  width: 230px;
+}
+
+img {
+  height: auto;
+  /* width: 300px; */
+}
+
+.leaflet-control-geosearch form input {
+  min-width: 60vw;
+  width: 100%;
+  /* outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    height: 30px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    text-indent: 8px; */
+}
+
+.leaflet-control-geosearch button.reset {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  line-height: 20px;
+  padding: 0 8px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+.leaflet-control-geosearch .leaflet-bar-part {
+  border-radius: 4px;
+  border-bottom: none;
+
+}
+
+div.geosearch.leaflet-bar.leaflet-control.leaflet-control-geosearch.leaflet-geosearch-button {
+  background-color: rgb(202, 255, 186);
+  color: black;
+  top: -70px;
+  left: 50px;
+}
+
+/* TrashForm CSS */
+.page {
+  text-align: center;
+}
+
+.formBlock {
+  width: 40%;
+  min-width: 400px;
+  text-align: left;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  background-color: rgb(199, 199, 199);
+  border-radius: 10px;
+  box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.5);
+}
+
+.formBlock>label {}
+
+.formBlock>input {
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 1rem;
+}
+.formBlock > div{
+  width: 100%;
+  text-align: center;
+}
+.formBlock button {
+  display: block;
+  margin: 0.4rem auto;
+  background-color: #03C03C;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 50%;
+  min-width: 200px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+}
+.formBlock   button:hover{
+  background-color: rgb(31, 31, 39);
+  transition: all 0.2s ease-in-out;
+}
