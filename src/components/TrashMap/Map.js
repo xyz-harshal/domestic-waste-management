@@ -2,7 +2,6 @@
 import 'leaflet/dist/leaflet.css';
 import './map.css'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import markers from "./markers";
 import { Icon } from 'leaflet';
 import { GeoSearchControl, OpenStreetMapProvider } from "leaflet-geosearch";
 import { useEffect, useState } from 'react';
@@ -16,7 +15,7 @@ const SearchField = () => {
         autoComplete: true,
         autoCompleteDelay: 250,
         showMarker: false,
-        showPopup: false        
+        showPopup: false
     });
 
     const map = useMap();
@@ -63,13 +62,13 @@ const Map = () => {
     return (
         <div>
             <section className="map-component">
-                <div className="map">
+                <div className="map">                    
                     <MapContainer center={[19.0760, 72.8777]} zoom={11} scrollWheelZoom={true}>
                         <SearchField />
                         <TileLayer
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />                       
+                        />                                                 
                         {data && data.map((marker) => {
                             var location = [marker.lat, marker.long];
                             // const base64string = btoa(String.fromCharCode(...new Uint8Array(marker.image.data.data)))
@@ -92,8 +91,9 @@ const Map = () => {
                         })}
                     </MapContainer>
                 </div>
-            </section>            
+            </section>                      
         </div>
+
     )
 }
 

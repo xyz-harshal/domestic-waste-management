@@ -10,19 +10,19 @@
   align-items: center;
   justify-content: center;
   color: whitesmoke;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 .map-component {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .leaflet-container {
   width: 70vw;
   height: 500px;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 .leaflet-control-attribution {
