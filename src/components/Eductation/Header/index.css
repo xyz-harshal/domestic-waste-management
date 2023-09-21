@@ -6,8 +6,7 @@
     text-align: center; /* Center-align content */
     padding: 60px 0; /* Vertical and horizontal padding for spacing */
     border-radius: 1rem;
-    position: relative; /* Create a stacking context for absolute positioning */
-    margin: 1.1rem;
+    margin: 1rem;
 }
 
 /* Header Content Styles */

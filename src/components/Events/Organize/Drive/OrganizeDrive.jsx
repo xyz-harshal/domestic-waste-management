@@ -31,19 +31,14 @@ export const OrganizeDrive = () => {
   };
 
   return (
-    <div className='OrganizeDrive'>
-      <h2 className='form-title'>Organize a Drive</h2>
-
-      <p className='form-description-container'>
-        
+    <div className='OrganizeDrive my-10'>
+      <p className='form-title'>Organize a Drive</p>
         <p className='form-description'>Fill out the form below to register your drive:</p>
-      </p>
       <div className="separator"></div>
 
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <label htmlFor='organizationName'>Name:</label>
-          <br />
           <input className='form-input'
             type='text'
             id='organizationName'
@@ -57,7 +52,7 @@ export const OrganizeDrive = () => {
 
         <div className='form-group'>
           <label htmlFor='dateTime'>Date:</label>
-          <br />
+        
           <input className='form-input'
             type='date'
             id='date'
@@ -70,7 +65,7 @@ export const OrganizeDrive = () => {
 
         <div className='form-group'>
           <label htmlFor='dateTime'>Time:</label>
-          <br />
+          
           <input className='form-input'
             type='time'
             id='time'
@@ -83,7 +78,7 @@ export const OrganizeDrive = () => {
 
         <div className='form-group'>
           <label htmlFor='maxPeopleLimit'>Max People Limit:</label>
-          <br />
+          
           <input className='form-input'
             type='number'
             id='maxPeopleLimit'
@@ -96,7 +91,7 @@ export const OrganizeDrive = () => {
 
         <div className='form-group'>
           <label htmlFor='agenda'>Agenda:</label>
-          <br />
+          
           <input className='form-textarea'
             id='agenda'
             name='agenda'
@@ -114,7 +109,7 @@ export const OrganizeDrive = () => {
           <div className='contact-details'>
             <div className='form-group'>
               <label htmlFor='organizerEmail'>Email:</label>
-              <br />
+            
               <input className='form-input'
                 type='text'
                 id='organizerEmail'
@@ -129,7 +124,7 @@ export const OrganizeDrive = () => {
 
             <div className='form-group'>
               <label htmlFor='phoneNumber'>Phone Number:</label>
-              <br />
+            
               <input className='form-input'
                 type='tel'
                 placeholder='XXXXXXXXXX'
@@ -147,7 +142,7 @@ export const OrganizeDrive = () => {
 
           <div className='form-group'>
             <label htmlFor='area'>District:</label>
-            <br />
+          
             <input className='form-input'
               type='text'
               id='district'
@@ -161,7 +156,7 @@ export const OrganizeDrive = () => {
 
           <div className='form-group'>
             <label htmlFor='area'>City:</label>
-            <br />
+          
             <input className='form-input'
               type='text'
               id='city'
@@ -175,7 +170,7 @@ export const OrganizeDrive = () => {
 
           <div className='form-group'>
             <label htmlFor='area'>Area:</label>
-            <br />
+          
             <input className='form-input'
               type='text'
               id='area'
@@ -204,7 +199,7 @@ export const OrganizeDrive = () => {
           ></textarea>
         </div>
         
-        <button type='submit' className='form-button' >Submit
+        <button type='submit' className='form-button-nice' >Submit
         </button>
       </form>
     </div>

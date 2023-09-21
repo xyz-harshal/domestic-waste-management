@@ -1,10 +1,34 @@
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    overflow-y: auto;
-    font-family: 'Josefin Sans', sans-serif;
-} */
+.heading_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 12%;
+  margin-top: 3rem;
+}
+.heading_reward{
+  font-size: 2rem; 
+  margin-bottom: 0.5rem; 
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+.diamond_point_cont{
+  border: 1px solid #E8E8E8;
+  border-radius: .5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.points{
+  font-size:1.2rem;
+  
+}
+.user_points{
+  font-size:1.2rem;
+  overflow-x:hidden;
+  width:auto;
+}
+.ur-reward{
+  font-size: 1.2rem;
+}
+/* -------------------------------- */
 .rewards_container {
     display:flex;
     flex-wrap:wrap;
@@ -14,33 +38,36 @@
     gap: 1.5rem;
     padding:2rem;
     height:100%;
+    margin: auto 8%;
     
 }
 .reward_image:hover {
-    transform: scale(1.05); 
+    transform: scale(.99); 
   }
 .reward_image{
     object-fit:cover;
-    height:15rem;
     max-width:100%;
     margin:0.9rem 2rem;
     transition: transform 0.3s ease;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
 }
 .reward_card{
-    border: 2px solid #e5e5e5;
-    padding:1.2rem;
+    border: 1px solid #E8E8E8;
+    padding:1rem;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    border-radius:8px;
-    gap:2.5rem;
-    width:80vw;
-    background-color: #fff;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius:.5rem;
+    gap:1.5rem;
+    background-color: transparent; 
+    transition: .3s ease;
+}
+.reward_card:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .reward_details{
-  margin-left:1.7rem;
+    /* margin-left:1.7rem; */
     width:70%;
     max-width:75%;
     flex-direction: column;
@@ -48,40 +75,34 @@
 }
 
 .reward_title {
-    margin-top:0.7rem;
+  font-family: 'Josefin Sans', sans-serif;
+   
     font-size: 1.5rem; /* Adjust font size */
-    font-weight: bolder;
-    margin-bottom: 0.5rem; /* Added margin at the bottom */
+    
   }
   
   /* Reward Description */
   .reward_description {
     margin-top:1rem;
-
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1rem; /* Adjust font size */
     color: #555; /* Darker text color for description */
     line-height: 1.5; /* Improved line height for readability */
   }
-  .reward_card:hover {
-    transform: translateY(-5px); /* Add a slight hover effect */
-    transition: transform 0.2s ease;
-  }
-
-  
   .claim_button{
-    font-weight:bold;
-    background-color: #009E60; /* Button background color */
-    color: #fff; /* Text color */
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
+    background-color: transparent; /* Button background color */
+    color: black; /* Text color */
+    padding: 0.4rem 1.1rem;
+    border-radius: .5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
-    margin-top: 5rem;
-    margin-left:20rem;
+    transition: 0.3s ease; /* Add transition for hover effect */
+    border: 1px solid #96EDA9;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
   .claim_button:hover {
-    background-color: #00B574; /* Change the background color on hover */
+    background-color: #96EDA9; /* Change the background color on hover */
   }
 
   .img_diamond_cont{
@@ -112,26 +133,7 @@
 
   }
   
-  .points{
-    font-size:1.67rem;
-    overflow-x:hidden;
-    width:auto;
-  }
-  .user_points{
-    font-size:1.2rem;
-    overflow-x:hidden;
-    width:auto;
-  }
-  .heading_container{
-    display:flex;
-    align-items:center;
-    gap:45rem;
-  
-  }
+ 
 
-   .heading_reward{
-    font-size: 1.2rem; /* Adjust the font size */
-    color: #009E75; /* Set the text color */
-    margin-bottom: 0.5rem; /* Add some space below the heading */
-    font-weight: bold; /* Make the text bold */
-  }
+
+ 
