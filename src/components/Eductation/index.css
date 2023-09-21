@@ -3,6 +3,5 @@
     display: flex;
     flex-wrap: wrap; /* Wrap items to the next line if needed */
     justify-content: space-between; /* Distribute items evenly horizontally */
-    padding: 20px; /* Add padding around the container */
     background-color: #f5f5f5; /* Background color for the container */
 }

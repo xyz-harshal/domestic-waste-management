@@ -1,17 +1,20 @@
 .item-container {
-    background-color: #fff; /* Background color for the item container */
     border: 1px solid #e0e0e0; /* Border for a subtle separation */
-    border-radius: 20px; /* Add a border radius for a softer look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow for elevation */
-    overflow: hidden;
-    margin: 10px; /* Spacing between items */
+    border-radius: .5rem; /* Add a border radius for a softer look */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+     /* Subtle box shadow for elevation */
     display: flex;
     transition: transform 0.2s;
     cursor: pointer;
+    margin: auto 8%;
+    padding: 1rem;
+    transition: .3s ease;
 }
 
 .item-container:hover {
-    transform: translateY(-5px); /* Hover effect to elevate the item */
+    /* transform: scale(0.99); */
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 /* Item Image Styles */
@@ -20,7 +23,7 @@
     max-width: 300px; /* Max width for the image */
     max-height: 300px; /* Max height for the image */
     overflow: hidden; /* Hide overflowing images */
-    border-radius: 8px 0 0 8px; /* Rounded corners for the left side */
+    border-radius: .5rem; /* Rounded corners for the left side */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +44,10 @@
 }
 
 .item-content h2 {
-    font-size: 24px; /* Header font size */
+    font-size: 1.7rem; /* Header font size */
     color: #333; /* Header text color */
     margin-bottom: 10px; /* Spacing below the header */
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .item-content p {
@@ -51,6 +55,7 @@
     color: #666; /* Content text color */
     margin-bottom: 15px; /* Spacing below each paragraph */
     line-height: 1.5; /* Line spacing for readability */
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* "View More" Link Styles */

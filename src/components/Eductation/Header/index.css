@@ -5,30 +5,30 @@
     color: #fff; /* Text color (white) */
     text-align: center; /* Center-align content */
     padding: 60px 0; /* Vertical and horizontal padding for spacing */
-    border-radius: 30px;
-    position: relative; /* Create a stacking context for absolute positioning */
+    border-radius: 1rem;
+    margin: 1rem;
 }
 
 /* Header Content Styles */
-.header-content {
+.header-text {
     display: flex;
+    flex-direction: column;
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space items evenly horizontally */
-    max-width: 1000px; /* Limit content width for readability */
-    margin: 0 auto; /* Center-align content horizontally */
+    
 }
-
-.header-text {
-    text-align: left; /* Left-align text in the left section */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Light text shadow */
+.header-content{
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
-.header-text h1 {
-    font-size: 36px; /* Header font size */
+.header-text .edu-heading {
+    font-size: 3rem; /* Header font size */
     margin-bottom: 10px; /* Add spacing below the header */
-    font-weight: bold; /* Bold font for the header */
+     /* Bold font for the header */
+     font-family: 'Josefin Sans', sans-serif;
 }
-
+.header-text .edu-sub-heading{
+    font-size: 1.5rem;
+} 
 .header-text p {
     font-size: 18px; /* Content font size */
     line-height: 1.5; /* Line spacing for readability */
@@ -39,7 +39,8 @@
 .header-intro {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for intro text */
     padding: 30px; /* Padding for spacing within the intro section */
-    margin-top: 20px; /* Add spacing between header and intro section */
+    /* margin-top: 20px; */
+     /* Add spacing between header and intro section */
     border-radius: 8px; /* Add a subtle border radius to the intro section */
 }
 

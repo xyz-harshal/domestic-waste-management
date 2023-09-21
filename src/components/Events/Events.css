@@ -1,127 +1,64 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+.event_header_main {
+    font-size:2rem;
+    font-family: 'Josefin Sans', sans-serif; 
 }
-.events{
-    overflow-x:hidden;
-}
-.events_header{
-    position:relative;
-    left:28rem;
-    top:0.7rem;
-    
-}
-.events_header h1 {
-    font-size:2.3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.events_header p{
+.events_header div p{
     color:#555;
     font-size:1.2rem;
-    position:relative;
-    top:0.7rem;
-    /* margin:0 auto; */
     line-height:1.5;
-    text-align: center; /* Center the text horizontally */
-    font-style: italic; /* Add italic style to the text */
-    max-width: 600px; /* Set a maximum width to control text width */
-    padding: 17px;
-    background-color: #f7f7f7;
-    transition: color 0.3s, transform 0.3s;
-    border-radius: 9px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16); /* Add a subtle shadow */
-    /* margin-top:10px; */
+    padding: 1.3rem;
+    transition: .3s ease;
+    border-radius: .5rem;
+    border: 1px solid #E8E8E8;
+    font-family: 'Ubuntu', sans-serif;
 }
 .options{
     display:flex;
-    justify-content:space-around;
-    position:relative;
-    top:2.1rem;
+    justify-content:center;
+    gap: 8rem;
 }
-
-  .events_header p:hover {
-    color: #007BFF; /* Change text color on hover to a shade of blue or your preferred color */
-    transform: scale(1.018); /* Scale up the paragraph slightly on hover */
-  }
+.events_header div p:hover {
+   transform: scale(1.01);
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 .org_heading, .participate_heading{
-    font-size:24px;
-    color: #03C03C;
-    font-weight:bold;
+    font-size:1.5rem;
     margin-bottom:10px;
-    text-transform: uppercase;
-    letter-spacing:1.5px;
-    text-align:center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: .5rem;
+    border: 1px solid #E8E8E8;
+    padding: .4rem;
+    transition: .3s ease;
+}
+.org_heading:hover, .participate_heading:hover{
+  transform: scale(1.01);
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 /* events.css */
-
-  /* animation for images */
-  .org-image , .part-image{
-    margin-top:1.4rem;
-    margin-bottom:0.6rem;
-  }
   .org-image img,
   .part-image img {
-    width:380px;
-    max-width: 100%;
     height: 15rem;
-    border-radius: 7px;
-    transition:  box-shadow 0.3s, filter 0.3s;
+    border-radius: .5rem;
+    transition: .3s ease;
   }
   
 .org-image img:hover,.part-image img:hover {
-    animation: imageHover 1s ease infinite;
-    /* transform: scale(1.02); */
-    box-shadow: 0 9px 12px rgba(0, 0, 0, 0.4);
-    filter: brightness(1.5);
+    transform: scale(.99) ;
 }
-  
-  @keyframes imageHover {
-    0% {
-      transform: scale(1);
-      filter: brightness(1);
-    }
-    
-    50% {
-      transform: scale(1.03);
-      filter: brightness(1.2);
-    }
-    100% {
-      transform: scale(1);
-      filter: brightness(1);
-    }
-  }
 
 .option button {
-    margin: 0.4rem 0.3rem;
-    background-color: #03C03C;
-    color: #fff;
+    background-color: #96EDA9;
     width:100%;
     padding: 10px 22px;
-    border: none;
-    border-radius: 4px;
+    border-radius: .5rem;
     cursor: pointer;
-    box-shadow: 5px 5px 4px 1px #0000003f;
-    z-index: 1;
-    position: relative; /* Add relative positioning for pseudo-element */
-  }
-  
-  .option button::before {
-    content: "";
-    /* blue color filter */
-    background-color: #0056b3; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 0; 
-    transition: height 0.3s linear; /* Add height transition */
-    transform-origin:right;
-    z-index: -1;
-  }
-  
-  .option button:hover::before {
-    height: 100%; /* Expand the height to 100% on hover */
-  }
+    border: 1px solid #E8E8E8;
+    font-family: 'Ubuntu', sans-serif;
+    transition: .3s ease;
+}
+.option button:hover {
+    background-color: white;
+    border: 1px solid #E8E8E8;
+    color:#03C03C ;
+}
   

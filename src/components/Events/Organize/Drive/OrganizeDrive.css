@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 
 *{
     margin:0;
@@ -8,24 +8,27 @@
 }
 
 .OrganizeDrive{
-    font-family: 'Open Sans', sans-serif;
-    background-color:#f3f3f3;
-    width:65%;
-    /* height:100vh; */
+    outline: 1px solid #E8E8E8;
     padding:2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    border-radius:10px;
-    max-width: 730px;
+    border-radius:.5rem;
+    max-width: 45%;
     margin: 0 auto;
+    background-color: transparent;
+    transition: .3s ease;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.OrganizeDrive:hover{
+  transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .form-title{
-    color: #17b169; 
-    font-weight:bolder;
+    color: #2FAF57; 
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
-    margin-bottom:0.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Start with opacity set to 0 (fully transparent) */
+    margin-bottom:0.8rem;
     animation: fadeIn 1s ease-in-out 0.4s forwards;
+    font-size: 2rem;
 }
 @keyframes fadeIn {
     from {
@@ -36,7 +39,7 @@
     }
   }
 .form-description {
-    color: #333;
+    color: gray;
     font-size: 1rem;
     margin-bottom:0.8rem;
   }
@@ -49,7 +52,7 @@
     width:100%;
   }
   .form-input{
-    border:1px solid #17b169; 
+    border:1px solid #2FAF57; 
     width: 100%;
     padding: 7px;
     margin-top: 3px;
@@ -73,7 +76,7 @@ label {
   
   .form-subtitle {
     opacity:0.8;
-    color: #17b169; 
+    color: #2FAF57; 
     font-size: 17px;
     margin-top: 5px;
   }
@@ -88,22 +91,19 @@ label {
     gap:0.2rem;
   }
  
-.form-button {
-    background-color: #17b169; /* Green background color */
-    color: #fff; 
-    padding: 10px 20px;
-    border: 2px solid #17b169; 
-    border-radius: 4px; 
+.form-button-nice {
+    color: black; 
+    padding: .5rem 1.2rem;
+    border: 1px solid #96EDA9; 
+    border-radius: .5rem; 
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Add transitions for hover effects */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    transition: .3s ease;
+}
   
-  .form-button:hover {
-    background-color: #0056b3; /* Blue background color on hover */
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger box shadow on hover */
+  .form-button-nice:hover {
+    background-color:white;
+   
+    background-color: #96EDA9;
   }
   
   

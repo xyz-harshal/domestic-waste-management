@@ -1,9 +1,10 @@
 import React from 'react'
-import "./OrganizeCampaign.css"
+// import "./OrganizeCampaign.css"
+import "../Drive/OrganizeDrive.css";
 import { useState } from 'react';
 
 export const OrganizeCampaign = () => {
-
+let [error,setError]=useState();
   const [formData, setFormData] = useState({
     organizationName: '',
     date: '',
@@ -26,25 +27,51 @@ export const OrganizeCampaign = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
+
+    const response = await fetch('/api/campaign', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    const json = await response.json()
+    if(!response.ok) {
+      setError(json.error)
+      console.log(error)
+    } 
+    if(response.ok) {
+      setError(null)
+      console.log('new workout added', json)
+      setFormData({
+        organizationName: '',
+        date: '',
+        time: '',
+        maxPeopleLimit: '',
+        agenda: '',
+        organizerEmail: '',
+        phoneNumber: '',
+        area: '',
+        district: '',
+        city: '',
+        briefing: ''
+      });
+    }
+
     console.log('Form submitted with data:', formData);
   };
 
   return (
-      <div className='OrganizeDrive'>
-        <h2 className='form-title'>Organize a Campaign</h2>
-  
-        <p className='form-description-container'>
+      <div className='OrganizeDrive my-10'>
+        <p className='form-title'>Organize a Campaign</p>
           <p className='form-description'>Fill out the form below to register your Campaign:</p>
-        </p>
         <div className="separator"></div>
   
         <form onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='organizationName'>Name:</label>
-            <br />
             <input className='form-input'
               type='text'
               id='organizationName'
@@ -58,7 +85,7 @@ export const OrganizeCampaign = () => {
   
           <div className='form-group'>
             <label htmlFor='dateTime'>Date:</label>
-            <br />
+            
             <input className='form-input'
               type='date'
               id='date'
@@ -71,7 +98,7 @@ export const OrganizeCampaign = () => {
   
           <div className='form-group'>
             <label htmlFor='dateTime'>Time:</label>
-            <br />
+            
             <input className='form-input'
               type='time'
               id='time'
@@ -84,7 +111,7 @@ export const OrganizeCampaign = () => {
   
           <div className='form-group'>
             <label htmlFor='maxPeopleLimit'>Max People Limit:</label>
-            <br />
+            
             <input className='form-input'
               type='number'
               id='maxPeopleLimit'
@@ -97,7 +124,7 @@ export const OrganizeCampaign = () => {
   
           <div className='form-group'>
             <label htmlFor='agenda'>Agenda:</label>
-            <br />
+            
             <input className='form-textarea'
               id='agenda'
               name='agenda'
@@ -115,7 +142,7 @@ export const OrganizeCampaign = () => {
             <div className='contact-details'>
               <div className='form-group'>
                 <label htmlFor='organizerEmail'>Email:</label>
-                <br />
+                
                 <input className='form-input'
                   type='text'
                   id='organizerEmail'
@@ -130,7 +157,7 @@ export const OrganizeCampaign = () => {
   
               <div className='form-group'>
                 <label htmlFor='phoneNumber'>Phone Number:</label>
-                <br />
+                
                 <input className='form-input'
                   type='tel'
                   placeholder='XXXXXXXXXX'
@@ -148,7 +175,7 @@ export const OrganizeCampaign = () => {
   
             <div className='form-group'>
               <label htmlFor='area'>District:</label>
-              <br />
+              
               <input className='form-input'
                 type='text'
                 id='district'
@@ -162,7 +189,7 @@ export const OrganizeCampaign = () => {
   
             <div className='form-group'>
               <label htmlFor='area'>City:</label>
-              <br />
+              
               <input className='form-input'
                 type='text'
                 id='city'
@@ -176,7 +203,7 @@ export const OrganizeCampaign = () => {
   
             <div className='form-group'>
               <label htmlFor='area'>Area:</label>
-              <br />
+              
               <input className='form-input'
                 type='text'
                 id='area'
@@ -205,7 +232,7 @@ export const OrganizeCampaign = () => {
             ></textarea>
           </div>
           
-          <button type='submit' className='form-button' >Submit
+          <button type='submit' className='form-button-nice' >Submit
           </button>
         </form>
       </div>

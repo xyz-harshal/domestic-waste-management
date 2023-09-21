@@ -2,7 +2,7 @@
   --white : #fff;
   --black : #000;
   --cardBorder : #ffffff30;
-  --cardBackground : #228B22;
+  --cardBackground : #40C272;
   --btnBg : #ffffff00;
   --btnFocus : #ffffffb9;
 
@@ -17,7 +17,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .wrapper{
@@ -26,21 +26,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--cardBackground);
+  background-color: var(--cardBackground);
 }
 label {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--black); /* You can adjust the color */
-/*}
-span {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--black); /* Icon color */
 }
-
 input {
   width: 100%;
   padding: 0.5rem;
@@ -63,6 +57,7 @@ input {
   border-radius: 1.5rem;
   padding: 0rem 2rem;
   backdrop-filter: blur(1.7rem);
+  /* background-color:#24B15F; */
   position: relative;
   z-index: 10;  
 }
@@ -79,7 +74,7 @@ input {
 }
 .desc{
   font-size: 1.2rem;
-  color: #ffffff85;
+  color: var(--black);
 }
  .signupbtn{
   width: 10rem;
@@ -118,26 +113,27 @@ input {
 }
 
  .circle-top{
-  width: 14rem;
-  height:  14rem;
+  width: 12rem;
+  height:  12rem;
   border-radius: 50%;
   position: fixed;
   top: 13%;
   left: 30%;
   z-index: 1;  
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  /* background: linear-gradient(135deg, #009E60, #FFFFFF); */
   box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
   animation: circleTop 9s ease infinite ;
 }
  .circle-bottom{
-  width:  14rem;
-  height:  14rem;
+  width:  12rem;
+  height:  12rem;
   border-radius: 50%;
   position: fixed;
   bottom: 1%;
   right: 30%;
   z-index: 1;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
   box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.5);
   animation: circleBottom 6s ease infinite;
 }
